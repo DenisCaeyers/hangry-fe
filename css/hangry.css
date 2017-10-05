@@ -1,5 +1,48 @@
+@charset "UTF-8";
 /* Colors */
 /* Fonts */
+.no-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.stripes {
+  height: 50px;
+  padding-top: 1em;
+  padding-bottom: 5em; }
+  .stripes .col-xs-2 div.pink-bg {
+    height: 30px;
+    background-color: #FFEFEF; }
+
+.dont-break-out {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 100; }
+
+ul.dash {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em; }
+
+ul.dash > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em; }
+
 header div#Menubutton {
   position: fixed;
   padding: 15px;
@@ -10,7 +53,8 @@ header div#Menubutton {
 
 header div.logo {
   text-align: center;
-  padding: 5rem 5rem 0 5rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   header div.logo img {
     height: 15rem; }
 
@@ -32,7 +76,8 @@ header div.logo {
   padding-top: 60px;
   /* Place content 60px from the top */
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */ }
+  /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
   .sidenav .fa-3 {
     font-size: 30px; }
 
@@ -65,7 +110,6 @@ header div.logo {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
-  padding: 20px;
   position: relative; }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -80,3 +124,37 @@ body {
   padding: 0 2rem 0 2rem; }
   body #main {
     background-color: white; }
+    body #main #home-top div.image {
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center; }
+    body #main #home-top div.title {
+      font-family: "Coming Soon", cursive;
+      font-size: 5rem; }
+    body #main #home-top div.meta {
+      font-family: "Coming Soon", cursive; }
+    body #main #home-top blockquote {
+      border-left: 0;
+      padding: 0.5em 10px;
+      quotes: "“" "”" "‘" "’"; }
+      body #main #home-top blockquote p {
+        display: inline;
+        line-height: 44px; }
+      body #main #home-top blockquote:before {
+        color: black;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em; }
+      body #main #home-top blockquote:after {
+        color: black;
+        content: close-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-left: 0.25em;
+        vertical-align: -0.4em; }
+    body #main #home-bottom .content {
+      font-size: 16px;
+      line-height: 32px; }

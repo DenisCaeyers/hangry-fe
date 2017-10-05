@@ -9,7 +9,8 @@ header{
     }
     div.logo{
         text-align: center;
-        padding: 5rem 5rem 0 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         img{
             height: 15rem;
         }
@@ -28,6 +29,7 @@ header{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
     .fa-3{
         font-size: 30px;
     }
@@ -65,7 +67,6 @@ header{
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
-    padding: 20px;
     position: relative;
 }
 

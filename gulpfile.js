@@ -29,7 +29,7 @@ gulp.task('watch',['sass-dev'], function () {
     browserSync.init({
         server: "."
     });
-    gulp.watch('*.scss', ['sass-dev']);
+    gulp.watch('./sass/*.scss', ['sass-dev']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 

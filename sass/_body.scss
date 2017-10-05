@@ -3,6 +3,53 @@ body{
     padding: 0 2rem 0 2rem;
     #main{
         background-color: white;
+        #home-top{
+            div.image{
+                width: 100%;
+                height: 400px;
+                background-size: cover;
+                background-position: center;
+            }
+            div.title{
+                font-family: $f-fancy;
+                font-size: 5rem;
+            }
+            div.meta{
+                font-family: $f-fancy;
+
+            }
+            blockquote{
+                border-left: 0;
+                padding: 0.5em 10px;
+                quotes: "\201C""\201D""\2018""\2019";
+                p{
+                    display: inline;
+                    line-height: 44px;
+                }
+                &:before{
+                    color: black;
+                    content: open-quote;
+                    font-size: 4em;
+                    line-height: 0.1em;
+                    margin-right: 0.25em;
+                    vertical-align: -0.4em; 
+                } 
+                &:after{
+                    color: black;
+                    content: close-quote;
+                    font-size: 4em;
+                    line-height: 0.1em;
+                    margin-left: 0.25em;
+                    vertical-align: -0.4em; 
+                } 
+            }
+        }
+        #home-bottom{
+            .content{
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
     }
 
 }
