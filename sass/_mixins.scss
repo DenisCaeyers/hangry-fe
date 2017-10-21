@@ -3,14 +3,86 @@
     padding-right: 0;
 }
 
+.contact-us{
+    background-color: $c-pink;
+    padding: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h1{
+        font-family: $f-fancy;
+        margin: 0;
+    }
+    p{
+        padding: 15px;
+        font-size: 16px;
+    }
+}
 .stripes{
     height: 50px;
-    padding-top: 1em;
     padding-bottom: 5em;
     .col-xs-2{
         div.pink-bg{
             height: 30px;
             background-color: $c-pink;
+        }
+    }
+    .col-md-1{
+        div.pink-bg{
+            height: 30px;
+            background-color: $c-pink;
+        }
+    }
+}
+
+.container-custom{
+    @media screen and (min-width: 970px) {
+        width: 970px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.cta{
+    a.btn-pink{
+        font-family: $f-fancy;
+        font-size: 18px;
+        padding: 10px;
+        padding-left: 45px;
+        padding-right: 45px;
+        border-radius: 0;
+        transition: 0.2s;
+
+        background-color: $c-darkpink;
+        color: white;
+
+        box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+
+        &:hover{
+            background-color: $c-pink;
+            color: black;
+            border: 1px dashed black;
+        }
+    }
+    a.btn-pink-small{
+        font-family: $f-fancy;
+        font-size: 16px;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 0;
+        transition: 0.2s;
+
+        background-color: $c-darkpink;
+        color: white;
+
+        box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+
+        &:hover{
+            background-color: $c-pink;
+            color: black;
+            border: 1px dashed black;
         }
     }
 }
@@ -34,3 +106,9 @@
       hyphens: auto;
     
     }
+
+.container{
+    @media screen and (min-width: 1200px) {
+        max-width: 1000px;
+    }
+}

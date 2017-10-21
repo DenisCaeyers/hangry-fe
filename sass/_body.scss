@@ -1,55 +1,327 @@
 body{
-    background-color: $c-pink;
-    padding: 0 2rem 0 2rem;
     #main{
         background-color: white;
-        #home-top{
-            div.image{
-                width: 100%;
-                height: 400px;
-                background-size: cover;
-                background-position: center;
-            }
-            div.title{
-                font-family: $f-fancy;
-                font-size: 5rem;
-            }
-            div.meta{
-                font-family: $f-fancy;
+        #post-top{
+            padding-top: 30px;
 
-            }
-            blockquote{
-                border-left: 0;
-                padding: 0.5em 10px;
-                quotes: "\201C""\201D""\2018""\2019";
-                p{
-                    display: inline;
-                    line-height: 44px;
+                div.title{
+                    font-family: $f-fancy;
+                    font-size: 3.8rem;
+                    text-align: center;
+                    @media screen and (min-width: 970px) {
+                        padding-bottom: 60px;
+                    }
                 }
-                &:before{
-                    color: black;
-                    content: open-quote;
-                    font-size: 4em;
-                    line-height: 0.1em;
-                    margin-right: 0.25em;
-                    vertical-align: -0.4em; 
-                } 
-                &:after{
-                    color: black;
-                    content: close-quote;
-                    font-size: 4em;
-                    line-height: 0.1em;
-                    margin-left: 0.25em;
-                    vertical-align: -0.4em; 
-                } 
+                div.meta{
+                    font-family: $f-fancy;
+                    @media screen and (min-width: 970px) {
+                        display: none;
+                    }
+                }
+
+            div.intro-wrapper{
+                position: relative;
+                
+                div.image{
+                    width: 90%;
+                    height: 600px;
+                    background-size: cover;
+                    background-position: center;
+                    box-shadow: 5px 10px 15px rgba(0,0,0,0.4);
+                    float: left;
+                    margin-right: 20%;
+                    @media screen and (min-width: 970px) {
+                        width: 50%;
+                        margin: 0;
+                    }
+                }
+                div.meta-post{
+                    display: none;
+                    width: 90%;
+                    @media screen and (min-width: 970px) {
+                        display: block;
+                    }
+
+                }
+                blockquote{
+                    width: 90%;
+                    background-color: $c-pink;
+                    border-left: 0;
+                    padding:25px;
+                    quotes: "\201C""\201D""\2018""\2019";
+                    float: right;
+                    z-index: 0;
+                    box-shadow: -5px 0px 15px rgba(0,0,0,0.2);
+                    margin-top: -50px;
+                    @media screen and (min-width: 970px) {
+                        width: 50%;
+                        margin-top: 80px;
+                        margin-left: -80px;
+                        float: left;
+                    }
+                    p{
+                        display: inline;
+                        line-height: 44px;
+                    }
+                    &:before{
+                        color: black;
+                        content: open-quote;
+                        font-size: 4em;
+                        line-height: 0.1em;
+                        margin-right: 0.25em;
+                        vertical-align: -0.4em; 
+                    } 
+                    &:after{
+                        color: black;
+                        content: close-quote;
+                        font-size: 4em;
+                        line-height: 0.1em;
+                        margin-left: 0.25em;
+                        vertical-align: -0.4em; 
+                    } 
+                }
             }
+            
         }
-        #home-bottom{
+        #post-bottom{
             .content{
+                padding-top: 20px;
+                @media screen and (min-width: 970px) {
+                    padding-top: 50px;
+                }
                 font-size: 16px;
                 line-height: 32px;
+                li{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
             }
         }
-    }
 
+        #home-top{
+            .post{
+                padding-bottom: 60px;
+                div.image{
+                    width: 90%;
+                    height: 600px;
+                    
+                    background-size: cover;
+                    background-position: center;
+                    box-shadow: 5px 10px 15px rgba(0,0,0,0.4);
+                    float: left;
+                    margin-right: 20%;
+                    margin-left: -15px;
+
+                    @media screen and (min-width: 970px) {
+                        height: 400px;
+                    }
+
+                    -moz-transition: all .5s;
+                    -webkit-transition: all .5s;
+                    transition: all .5s;
+                    &:hover{
+                        -moz-transform: scale(1.1,1.1);
+                        -webkit-transform: scale(1.1,1.1);
+                        transform: scale(1.1 ,1.1); 
+                    }
+                }
+                div.title{
+                    font-family: $f-fancy;
+                    font-size: 38px;
+                    padding-top: 45px;
+                    @media screen and (min-width: 970px) {
+                        text-align: left;
+                    }
+                }
+                div.intro{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    font-size: 18px;
+                    line-height: 44px;
+                    @media screen and (min-width: 970px) {
+                        text-align: left;
+                        padding-left: 0px;
+                    }
+                }
+                div.cta{
+                    @media screen and (min-width: 970px) {
+                        text-align: right;
+                    }
+                }
+            }
+            .uneven{
+                div.image{
+                    float: right;
+                    margin-right: -15px;
+                    margin-left: 20%;
+                    @media screen and (min-width: 970px) {
+                        margin:0;
+                        float: right;
+                    }
+                }
+                div.title{
+                    @media screen and (min-width: 970px) {
+                        text-align: right;
+                    }
+                }
+                div.intro{
+                    @media screen and (min-width: 970px) {
+                        text-align: right;
+                    }
+                }
+                div.cta{
+                    @media screen and (min-width: 970px) {
+                        text-align: left;
+                    }
+                }
+            }
+            
+        }
+        .carousel-wrapper{
+            position: relative;
+            @media screen and (min-width: 970px) {
+                padding-top: 30px;
+                padding-bottom: 100px;
+            }
+            .siema{
+                div{
+                    text-align: center;
+                    img{
+                        width: 85%;
+
+                        -moz-transition: all .5s;
+                        -webkit-transition: all .5s;
+                        transition: all .5s;
+                        &:hover{
+                            -moz-transform: scale(1.1,1.1);
+                            -webkit-transform: scale(1.1,1.1);
+                            transform: scale(1.1 ,1.1); 
+                        }
+                    }               
+                }
+            }
+            .controls{
+                div{
+                    position: absolute;
+                    top: 33%;
+                    bottom: 52%;
+                    height: 25px;
+                    width: 25px;
+                    font-size: 40px;
+                    font-family: $f-fancy;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .prev{
+                    left: 0px;
+                   
+                }
+                .next{
+                    right: 0px;
+                }
+            }
+        }   
+
+        #category-page, #allerecepten{
+            a.more-link{
+                color: $c-darkpink;
+                font-family: $f-fancy;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .cat-header{
+                h1.cat-title{
+                    font-family: $f-fancy;
+                    margin: 0;
+                }
+            }
+            .cat-desc{
+                padding-bottom: 60px; 
+                font-family: $f-fancy;
+                font-size: 18px;
+                p{
+                    font-family: $f-fancy;
+                    font-size: 18px;
+                }
+            }
+            div.cat-posts{
+                margin-bottom: 60px;
+            }
+            .post{
+                div.image{
+                    height: 300px;
+                    background-size: cover;
+                    background-position: center;
+                    box-shadow: 5px 10px 15px rgba(0,0,0,0.4);
+                    -moz-transition: all .5s;
+                    -webkit-transition: all .5s;
+                    transition: all .5s;
+                    &:hover{
+                        -moz-transform: scale(1.1,1.1);
+                        -webkit-transform: scale(1.1,1.1);
+                        transform: scale(1.1 ,1.1); 
+                    }
+                }
+                div.box{
+                    padding: 15px;
+                    padding-bottom:60px; 
+                    .title{
+                        h2{
+                            font-family: $f-fancy;
+                            font-size: 24px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+        
+        .insta-header, .recent-header{
+            margin-top: 60px;
+            span{
+                font-family: $f-fancy;
+                font-size: 18px;
+            }
+            i{
+                font-size: 22px;
+                margin-left: 28px;
+                margin-right: 10px;
+            }
+        }
+
+        #contact{
+            h1{
+                font-family: $f-fancy;
+
+            }
+            label{
+                font-family: $f-fancy;
+                font-weight: 100;
+            }
+            .wpcf7-submit{
+                font-family: $f-fancy;
+                font-size: 18px;
+                padding: 10px;
+                padding-left: 45px;
+                padding-right: 45px;
+                border-radius: 0;
+                transition: 0.2s;
+        
+                background-color: $c-darkpink;
+                color: white;
+        
+                box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+
+                border: 1px solid $c-darkpink;
+        
+                &:hover{
+                    background-color: $c-pink;
+                    color: black;
+                    border: 1px dashed black;
+                }
+            }
+            
+        }
+    }
 }

@@ -5,13 +5,67 @@
   padding-left: 0;
   padding-right: 0; }
 
+.contact-us {
+  background-color: #FFEFEF;
+  padding: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .contact-us h1 {
+    font-family: "Coming Soon", cursive;
+    margin: 0; }
+  .contact-us p {
+    padding: 15px;
+    font-size: 16px; }
+
 .stripes {
   height: 50px;
-  padding-top: 1em;
   padding-bottom: 5em; }
   .stripes .col-xs-2 div.pink-bg {
     height: 30px;
     background-color: #FFEFEF; }
+  .stripes .col-md-1 div.pink-bg {
+    height: 30px;
+    background-color: #FFEFEF; }
+
+@media screen and (min-width: 970px) {
+  .container-custom {
+    width: 970px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.cta a.btn-pink {
+  font-family: "Coming Soon", cursive;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 0;
+  transition: 0.2s;
+  background-color: #FF7474;
+  color: white;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3); }
+  .cta a.btn-pink:hover {
+    background-color: #FFEFEF;
+    color: black;
+    border: 1px dashed black; }
+
+.cta a.btn-pink-small {
+  font-family: "Coming Soon", cursive;
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 0;
+  transition: 0.2s;
+  background-color: #FF7474;
+  color: white;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3); }
+  .cta a.btn-pink-small:hover {
+    background-color: #FFEFEF;
+    color: black;
+    border: 1px dashed black; }
 
 .dont-break-out {
   /* These are technically the same, but use both */
@@ -27,6 +81,10 @@
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto; }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1000px; } }
 
 body {
   font-family: "Oswald", sans-serif;
@@ -47,6 +105,7 @@ header div#Menubutton {
   position: fixed;
   padding: 15px;
   left: 0;
+  top: 5px;
   font-size: 25px;
   background-color: rgba(255, 255, 255, 0.8);
   color: black; }
@@ -57,6 +116,37 @@ header div.logo {
   padding-bottom: 2rem; }
   header div.logo img {
     height: 15rem; }
+
+header div.wave {
+  background-image: url("img/wave.png");
+  height: 142px;
+  width: 100%;
+  margin-top: 30px; }
+
+header div.tagline {
+  font-family: "Coming Soon", cursive;
+  font-size: 18px; }
+
+@media screen and (min-width: 970px) {
+  header {
+    padding-bottom: 50px; } }
+
+/* Main nav */
+.mainnav {
+  padding: 30px; }
+  .mainnav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: "Coming Soon", cursive;
+    text-transform: uppercase;
+    display: inline-block; }
+  .mainnav a:hover, .mainnav a:focus {
+    color: black;
+    text-decoration: underline; }
 
 /* The side navigation menu */
 .sidenav {
@@ -77,6 +167,7 @@ header div.logo {
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #FFEFEF;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
   .sidenav .fa-3 {
     font-size: 30px; }
@@ -86,7 +177,7 @@ header div.logo {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 22px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
   font-family: "Coming Soon", cursive;
@@ -119,42 +210,253 @@ header div.logo {
   .sidenav a {
     font-size: 18px; } }
 
-body {
-  background-color: #FFEFEF;
-  padding: 0 2rem 0 2rem; }
-  body #main {
-    background-color: white; }
-    body #main #home-top div.image {
-      width: 100%;
-      height: 400px;
-      background-size: cover;
-      background-position: center; }
-    body #main #home-top div.title {
+body #main {
+  background-color: white; }
+  body #main #post-top {
+    padding-top: 30px; }
+    body #main #post-top div.title {
       font-family: "Coming Soon", cursive;
-      font-size: 5rem; }
-    body #main #home-top div.meta {
+      font-size: 3.8rem;
+      text-align: center; }
+      @media screen and (min-width: 970px) {
+        body #main #post-top div.title {
+          padding-bottom: 60px; } }
+    body #main #post-top div.meta {
       font-family: "Coming Soon", cursive; }
-    body #main #home-top blockquote {
-      border-left: 0;
-      padding: 0.5em 10px;
-      quotes: "“" "”" "‘" "’"; }
-      body #main #home-top blockquote p {
-        display: inline;
-        line-height: 44px; }
-      body #main #home-top blockquote:before {
-        color: black;
-        content: open-quote;
-        font-size: 4em;
-        line-height: 0.1em;
-        margin-right: 0.25em;
-        vertical-align: -0.4em; }
-      body #main #home-top blockquote:after {
-        color: black;
-        content: close-quote;
-        font-size: 4em;
-        line-height: 0.1em;
-        margin-left: 0.25em;
-        vertical-align: -0.4em; }
-    body #main #home-bottom .content {
-      font-size: 16px;
-      line-height: 32px; }
+      @media screen and (min-width: 970px) {
+        body #main #post-top div.meta {
+          display: none; } }
+    body #main #post-top div.intro-wrapper {
+      position: relative; }
+      body #main #post-top div.intro-wrapper div.image {
+        width: 90%;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+        float: left;
+        margin-right: 20%; }
+        @media screen and (min-width: 970px) {
+          body #main #post-top div.intro-wrapper div.image {
+            width: 50%;
+            margin: 0; } }
+      body #main #post-top div.intro-wrapper div.meta-post {
+        display: none;
+        width: 90%; }
+        @media screen and (min-width: 970px) {
+          body #main #post-top div.intro-wrapper div.meta-post {
+            display: block; } }
+      body #main #post-top div.intro-wrapper blockquote {
+        width: 90%;
+        background-color: #FFEFEF;
+        border-left: 0;
+        padding: 25px;
+        quotes: "“" "”" "‘" "’";
+        float: right;
+        z-index: 0;
+        box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2);
+        margin-top: -50px; }
+        @media screen and (min-width: 970px) {
+          body #main #post-top div.intro-wrapper blockquote {
+            width: 50%;
+            margin-top: 80px;
+            margin-left: -80px;
+            float: left; } }
+        body #main #post-top div.intro-wrapper blockquote p {
+          display: inline;
+          line-height: 44px; }
+        body #main #post-top div.intro-wrapper blockquote:before {
+          color: black;
+          content: open-quote;
+          font-size: 4em;
+          line-height: 0.1em;
+          margin-right: 0.25em;
+          vertical-align: -0.4em; }
+        body #main #post-top div.intro-wrapper blockquote:after {
+          color: black;
+          content: close-quote;
+          font-size: 4em;
+          line-height: 0.1em;
+          margin-left: 0.25em;
+          vertical-align: -0.4em; }
+  body #main #post-bottom .content {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 32px; }
+    @media screen and (min-width: 970px) {
+      body #main #post-bottom .content {
+        padding-top: 50px; } }
+    body #main #post-bottom .content li {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  body #main #home-top .post {
+    padding-bottom: 60px; }
+    body #main #home-top .post div.image {
+      width: 90%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+      float: left;
+      margin-right: 20%;
+      margin-left: -15px;
+      -moz-transition: all .5s;
+      -webkit-transition: all .5s;
+      transition: all .5s; }
+      @media screen and (min-width: 970px) {
+        body #main #home-top .post div.image {
+          height: 400px; } }
+      body #main #home-top .post div.image:hover {
+        -moz-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1); }
+    body #main #home-top .post div.title {
+      font-family: "Coming Soon", cursive;
+      font-size: 38px;
+      padding-top: 45px; }
+      @media screen and (min-width: 970px) {
+        body #main #home-top .post div.title {
+          text-align: left; } }
+    body #main #home-top .post div.intro {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 18px;
+      line-height: 44px; }
+      @media screen and (min-width: 970px) {
+        body #main #home-top .post div.intro {
+          text-align: left;
+          padding-left: 0px; } }
+    @media screen and (min-width: 970px) {
+      body #main #home-top .post div.cta {
+        text-align: right; } }
+  body #main #home-top .uneven div.image {
+    float: right;
+    margin-right: -15px;
+    margin-left: 20%; }
+    @media screen and (min-width: 970px) {
+      body #main #home-top .uneven div.image {
+        margin: 0;
+        float: right; } }
+  @media screen and (min-width: 970px) {
+    body #main #home-top .uneven div.title {
+      text-align: right; } }
+  @media screen and (min-width: 970px) {
+    body #main #home-top .uneven div.intro {
+      text-align: right; } }
+  @media screen and (min-width: 970px) {
+    body #main #home-top .uneven div.cta {
+      text-align: left; } }
+  body #main .carousel-wrapper {
+    position: relative; }
+    @media screen and (min-width: 970px) {
+      body #main .carousel-wrapper {
+        padding-top: 30px;
+        padding-bottom: 100px; } }
+    body #main .carousel-wrapper .siema div {
+      text-align: center; }
+      body #main .carousel-wrapper .siema div img {
+        width: 85%;
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        transition: all .5s; }
+        body #main .carousel-wrapper .siema div img:hover {
+          -moz-transform: scale(1.1, 1.1);
+          -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1); }
+    body #main .carousel-wrapper .controls div {
+      position: absolute;
+      top: 33%;
+      bottom: 52%;
+      height: 25px;
+      width: 25px;
+      font-size: 40px;
+      font-family: "Coming Soon", cursive;
+      text-align: center;
+      cursor: pointer; }
+    body #main .carousel-wrapper .controls .prev {
+      left: 0px; }
+    body #main .carousel-wrapper .controls .next {
+      right: 0px; }
+  body #main #category-page a.more-link, body #main #allerecepten a.more-link {
+    color: #FF7474;
+    font-family: "Coming Soon", cursive; }
+    body #main #category-page a.more-link:hover, body #main #allerecepten a.more-link:hover {
+      text-decoration: underline; }
+  body #main #category-page .cat-header h1.cat-title, body #main #allerecepten .cat-header h1.cat-title {
+    font-family: "Coming Soon", cursive;
+    margin: 0; }
+  body #main #category-page .cat-desc, body #main #allerecepten .cat-desc {
+    padding-bottom: 60px;
+    font-family: "Coming Soon", cursive;
+    font-size: 18px; }
+    body #main #category-page .cat-desc p, body #main #allerecepten .cat-desc p {
+      font-family: "Coming Soon", cursive;
+      font-size: 18px; }
+  body #main #category-page div.cat-posts, body #main #allerecepten div.cat-posts {
+    margin-bottom: 60px; }
+  body #main #category-page .post div.image, body #main #allerecepten .post div.image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    body #main #category-page .post div.image:hover, body #main #allerecepten .post div.image:hover {
+      -moz-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
+  body #main #category-page .post div.box, body #main #allerecepten .post div.box {
+    padding: 15px;
+    padding-bottom: 60px; }
+    body #main #category-page .post div.box .title h2, body #main #allerecepten .post div.box .title h2 {
+      font-family: "Coming Soon", cursive;
+      font-size: 24px; }
+  body #main .insta-header, body #main .recent-header {
+    margin-top: 60px; }
+    body #main .insta-header span, body #main .recent-header span {
+      font-family: "Coming Soon", cursive;
+      font-size: 18px; }
+    body #main .insta-header i, body #main .recent-header i {
+      font-size: 22px;
+      margin-left: 28px;
+      margin-right: 10px; }
+  body #main #contact h1 {
+    font-family: "Coming Soon", cursive; }
+  body #main #contact label {
+    font-family: "Coming Soon", cursive;
+    font-weight: 100; }
+  body #main #contact .wpcf7-submit {
+    font-family: "Coming Soon", cursive;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 0;
+    transition: 0.2s;
+    background-color: #FF7474;
+    color: white;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #FF7474; }
+    body #main #contact .wpcf7-submit:hover {
+      background-color: #FFEFEF;
+      color: black;
+      border: 1px dashed black; }
+
+footer.site-footer div.footer-img {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-image: url("img/footer.png");
+  height: 110px; }
+
+footer.site-footer div.text {
+  font-family: "Coming Soon", cursive;
+  margin-bottom: 100px; }
+  footer.site-footer div.text .title {
+    font-size: 48px; }
+  footer.site-footer div.text .under {
+    font-size: 18px;
+    font-style: italic; }
+  footer.site-footer div.text p {
+    padding-top: 15px;
+    font-size: 18px; }

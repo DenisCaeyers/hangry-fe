@@ -3,6 +3,7 @@ header{
         position: fixed;
         padding: 15px;
         left: 0;
+        top: 5px;
         font-size: 25px;
         background-color: rgba(255,255,255,.8);
         color: black;
@@ -15,7 +16,42 @@ header{
             height: 15rem;
         }
     }
+    div.wave{
+        background-image: url('img/wave.png');
+        height: 142px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    div.tagline{
+        font-family: $f-fancy;
+        font-size: 18px;
+    }
+    @media screen and (min-width: 970px) {
+        padding-bottom: 50px;
+    }
 }
+
+/* Main nav */
+.mainnav{
+    padding: 30px;
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+        font-family: $f-fancy;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    a:hover, a:focus{
+        color: black;
+        text-decoration: underline;
+    }
+    
+}
+
 
 /* The side navigation menu */
 .sidenav {
@@ -29,6 +65,7 @@ header{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: $c-pink;
     box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
     .fa-3{
         font-size: 30px;
@@ -40,7 +77,7 @@ header{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 22px;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.3s;
     font-family: $f-fancy;

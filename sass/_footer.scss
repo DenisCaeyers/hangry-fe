@@ -1,0 +1,23 @@
+footer.site-footer{
+    div.footer-img{
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-image: url('img/footer.png');
+        height: 110px;
+    }
+    div.text{
+        font-family: $f-fancy;
+        margin-bottom: 100px;
+        .title{
+            font-size: 48px;
+        }
+        .under{
+            font-size: 18px;
+            font-style: italic;
+        }
+        p{
+            padding-top: 15px;
+            font-size: 18px;
+        }
+    }
+}
